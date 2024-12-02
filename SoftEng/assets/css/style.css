@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.E-classe {
+    border-left: solid 4px #00C1FE;
+    font-size: 20px;
+}
+
+/* Original CSS for alerts and forms */
+.alert {
+    height: 25px !important;
+    padding: 2px 2px;
+    font-size: 13px;
+}
+
+.sign-in {
+    text-align: center;
+}
+
+.bg-sign-in {
+    background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
+    height: 100vh;
+}
+
+.form-sign-in, .sign-up {
+    border-radius: 10px;
+    width: 360px;
+}
+
+.bg-show {
+    display: block !important;
+    z-index: 0;
+}
+
+.bg {
+    background-color: rgba(0, 0, 0, 0.575);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    cursor: pointer;
+    display: none;
+}
+
+/* New styles for the container */
+.container {
+    width: 420px;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.continue-sign-in-text {
+    margin-top: 10px; /* Space between button and text */
+    text-align: center; /* Center the text */
+}
+
+/* New styles for steps */
+.steps {
+    display: flex;
+    justify-content: space-between; /* Adjusts spacing between steps */
+    align-items: center; /* Aligns items vertically */
+    margin-bottom: 20px;
+}
+
+.step {
+    flex: 1; /* Makes each step take equal width */
+    height: 4px; /* Height of the line */
+    background: #CDCDCD; /* Default background color */
+    margin: 0 5px; /* Spacing between lines */
+    transition: background 0.3s;
+}
+
+.step.active {
+    background: #00C1FE; /* Active step color */
+}
+
+.radio-options {
+    display: block; /* Change to block for vertical alignment */
+    margin-bottom: 20px; /* Space below the radio buttons */
+}
+
+.radio-options label {
+    display: block; /* Each label takes full width */
+    margin: 10px 0; /* Space between radio options */
+}
+
+/* Common form element styles */
+input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px;
+    border: 1px solid #CDCDCD;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+/* Button styles */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff; /* White text */
+}
+
+button.next {
+    background-color: #00C1FE; /* Main button color */
+}
+
+button.next:hover {
+    background-color: #007bbf; /* Darker shade on hover */
+}
+
+button.back {
+    background-color: #CDCDCD; /* Light gray for back button */
+    color: #333; /* Dark text for contrast */
+}
+
+button.back:hover {
+    background-color: #a6a6a6; /* Darker gray on hover */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button-container button {
+    background-color: #00C1FE; /* Default background color for buttons */
+    color: white; /* White text for visibility */
+    border: 1px solid #00C1FE; /* Border color matching the background */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.button-container button:hover {
+    background-color: #007bbf; /* Darker shade on hover */
+    color: white; /* Keep text white on hover */
+}
+
+/* Style for the Sign In button */
+button[type="submit"].btn {
+    background-color: #00C1FE; /* Main button color */
+    color: white; /* White text */
+}
+
+button[type="submit"].btn:hover {
+    background-color: #007bbf; /* Darker shade on hover */
+}
+
+/* Style for the Continue button */
+.continue-button {
+    width: 200px; /* Adjust width as needed */
+    padding: 10px 20px; /* Add some padding for better appearance */
+    font-size: 16px; /* Adjust font size */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Optional for rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.continue-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Original styles for register form */
+.register {
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1000px;
+    transform: translate(-190px, -260px);
+    transition: 1s ease-out;
+}
+
+.register-active {
+    margin-top: 0;
+    transition: 1s ease-out;
+}
+
+button[type="submit"], .btn-primary {
+    font-size: 13px;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+button[type="submit"].btn-wide {
+    width: 180px;
+}
+
+.btn-primary {
+    background-color: #00C1FE;
+    border-color: #00C1FE;
+}
+
+.btn-primary:hover {
+    background-color: #04a6d8;
+    border-color: #04a6d8;
+}
+
+/* Original table and card styles */
+.cards .card__items {
+    border-radius: 8px;
+    width: 200px; /* Reduced size */
+    height: 130px;
+}
+
+.card__items--blue {
+    background-color: #F0F9FF;
+}
+
+.card__items--rose {
+    background-color: #FEF6FB;
+}
+
+/* Dropdowns */
+.filter-container select {
+    flex: 0 1 130px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 12px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    appearance: none;
+}
+
+.filter-container select:hover {
+    border-color: #007bff;
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Alumni list */
+.alumni-list-header {
+    border-bottom: 2px solid #E5E5E5;
+}
+
+.table th {
+    font-size: 13px;
+    color: #151515;
+}
+
+table tbody tr td {
+    font-size: 12px !important;
+}
+
+/* Utility classes */
+.valid {
+    color: red;
+}
+
+.fa-search {
+    left: -30px;
+}
+
+.fa-rotate-270 {
+    transform: rotate(270deg);
+    transition: transform 0.3s ease;
+}
+
+@media screen and (min-width:768px) {
+    .bg-sidebar {
+        position: sticky !important;
+        top: 0;
+        width: 18% !important;
+    }
+    .hidden-sidebar {
+        margin-left: -18%;
+        transition: margin 0.6s ease-in-out;
+    }
+}
